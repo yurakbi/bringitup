@@ -39,6 +39,5 @@ window.addEventListener('DOMContentLoaded', () => {
     player.init();
 
     new Difference('.officerold', '.officernew', '.officer__card-item').init();
-
     new Form('.form').init();
 });
