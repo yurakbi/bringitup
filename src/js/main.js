@@ -8,6 +8,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const slider = new MainSlider({btns: '.next', container: '.page'});
     slider.render();
 
+    const modulPageSlider = new MainSlider({container: '.moduleapp', btns: '.next'});
+    modulPageSlider.render();
+    
     const showUpSlider = new MiniSlider({
         container: '.showup__content-slider',
         next: '.showup__next',
@@ -34,6 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
         activeClass: 'feed__item-active'
     });
     feedSlider.init();
+
 
     const player = new VideoPlayer('.showup .play', '.overlay');
     player.init();
